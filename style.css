@@ -2,10 +2,12 @@
  font-family:"Poppins";
 }
 @media only screen and (max-width: 375px){
+
   div.container{
+  height: 800px;
   box-sizing: border-box; 
-  height: 600px;
-  margin:2px;
+  margin:auto;
+  background-image: url("bg-intro-mobile.png");
   background-color: hsl(0, 100%, 74%);
   font-size: 12px;   
   
@@ -14,47 +16,43 @@
   float: left;
   width: 80%;
   margin:0px;
-  padding: 5px;
+  padding: 25px;
  
 }
   .card {
-  padding: 16px;
   margin-top:10px;
-  text-align: center;
-  background-color: #f1f1f1;
-}
-.red{
-  color: hsl(0, 100%, 74%);
-  font-size: 8px;
-  
-}
-.bottom{
-  color:hsl(246, 25%, 77%);
-  font-size: 8px;
+  width:100%x;
 }
 input{
-  border:1px hsl(248, 32%, 49%) ;
   border-radius: 5px;
   width: 100%;
   padding: 10px;
   margin-top: 8px;
+  border:1px solid hsl(246, 25%, 77%);
+}
+input:focus {
+  border:1px  hsl(246, 25%, 77%);
 }
 #blue{
   background-color:hsl(248, 32%, 49%);
-  margin-top:200px;
+  margin-top:150px;
+  margin-bottom:60px;
+  padding:12px;
   height:50px;
-}
-.button{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width: 90%;
+  border-radius:5px;
   color:white;
-  text-align: center;
-  text-decoration: none;
-  font-size: 14px;
-  cursor: pointer;
-  margin-top:25px;
-  margin-bottom:25px;
-  background-color:hsl(154, 59%, 51%);
- padding: 15px;
+  text-align:center;
 }
+  .form{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background-color: #f1f1f1;
+  width: 90%;
+  padding:12px;
+  border-radius:5px;
+  text-align:center;
+  }
 .rightpart{
   float: left;
   width: 100%;
@@ -78,18 +76,7 @@ input{
   color:hsl(246, 25%, 77%);
   font-size: 8px;
 }
-input{
-  border:1px hsl(248, 32%, 49%) ;
-  border-radius: 5px;
-  width: 100%;
-  padding: 10px;
-  margin-top: 8px;
-
-}
-#blue{
-  background-color:hsl(248, 32%, 49%);
-  margin-bottom:10px;
-} 
+ 
   h1{
     margin:5px;
     margin-bottom:10px;
@@ -102,20 +89,8 @@ input{
     line-height:1.6;
     margin:5px;
     font-size: 14px;
-    text-align:justify;
-  }
-  #text{
-  text-align: center;
-  padding: 2px;
-  background-color: hsl(0, 100%, 74%);
-  color:white;
-    
-}
-  div.card {
-  padding: 1px;
-  margin-top:50px;
-  text-align: justify;
-}
+  }  
+
 div.rightpart{
   float: left;
   width: 100%;
@@ -134,14 +109,21 @@ div.rightpart{
   padding: 1px;
 }
   
-  
 }
 @media only screen and (min-width: 1440px){
+  
+div.outer{
+ background-image: url("favicon-32x32");
+box-sizing: border-box; 
+  height: 800px;
+  width: 100%;
+}
   div.container{
   box-sizing: border-box; 
   height: 780px;
-  margin:auto;
-  width: 100%;
+  margin:5px;
+  width: 95%;
+  background-image: url("bg-intro-desktop.png");
   background-color: hsl(0, 100%, 74%);
   
 }
@@ -149,14 +131,13 @@ div.rightpart{
   float: left;
   width: 20%;
   margin-left:200px;
-  padding: 10px;
+  padding:25px;
  
 }
   .card {
-  padding: 16px;
+  width:100%;
   margin-top:100px;
-  text-align: center;
-  background-color: #f1f1f1;
+
 }
 .red{
   color: hsl(0, 100%, 74%);
@@ -168,16 +149,35 @@ div.rightpart{
   font-size: 8px;
 }
 input{
-  border:1px hsl(248, 32%, 49%) ;
+  border:1px solid hsl(246, 25%, 77%) ;
   border-radius: 5px;
-  width: 100%;
+  width: 90%;
   padding: 10px;
   margin-top: 8px;
+  background-color: white;
+}
+input:focus {
+  border:1px  hsl(246, 25%, 77%);
 }
 #blue{
   background-color:hsl(248, 32%, 49%);
   margin-top:200px;
+  padding:12px;
+  height:50px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width: 100%;
+  border-radius:5px;
+  color:white;
+  text-align:center;
 }
+.form{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background-color: #f1f1f1;
+  width: 100%;
+  padding:12px;
+  border-radius:5px;
+  text-align:center;
+  }
 .button{
   color:white;
   text-align: center;
@@ -198,32 +198,12 @@ input{
   text-align: center;
   margin-right:-200px;
   margin-top:250px;
-  padding:50px;
+  padding:20px;
   background-color:hsl(0, 100%, 74%);
   color:white;
   
 }
 
-.red{
-  color: hsl(0, 100%, 74%);
-  font-size: 8px;
-}
-.bottom{
-  color:hsl(246, 25%, 77%);
-  font-size: 8px;
-}
-input{
-  border:1px hsl(248, 32%, 49%) ;
-  border-radius: 5px;
-  width: 100%;
-  padding: 10px;
-  margin-top: 8px;
-
-}
-#blue{
-  background-color:hsl(248, 32%, 49%);
-  height:50px;
-} 
   h1{
     margin:5px;
     margin-bottom:10px;
@@ -237,7 +217,11 @@ input{
     line-height:1.6;
     margin:5px;
     font-size: 16px;
-    text-align:justify;
     font-weight:400;
+    text-align:justify;
   }
+}
+#div1,#div2,#div3,#div4{
+  color: hsl(0, 100%, 74%);
+  text-align:right;
 }
